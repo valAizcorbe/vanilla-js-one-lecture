@@ -8,21 +8,22 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <button id="theme-button">Dark Mode</button>
+    <button id="theme-button" onclick="themeChanged()">Dark Mode</button>
     <p id="username"></p>
     <section id="counter-container">
         <p id="counter"></p>
         <div>
-            <button id="decrement" class="counter-buttons">-</button>
+            <button id="decrement" class="counter-buttons" onclick='decrementCount()'>-</button>
             <button id="clear" class="counter-buttons">C</button>
-            <button id="increment" class="counter-buttons">+</button>
+            <button id="increment" class="counter-buttons" onclick = 'incrementCount()'>+</button>
         </div>
     </section>
     <section id="input-container">
         Enter Your Name: 
         <input type="text" id="nameInput" />
-        <button>Submit</button>
+        <button onclick="changeUsername()">Submit</button>
     </section>
+    <script src="index.js"></script>
 </body>
 
 </html>
